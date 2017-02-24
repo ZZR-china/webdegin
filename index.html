@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>web design</title>
+    <style type="text/css">
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        background-color: #F2F2F2;
+        font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        color: #404040;
+        position: relative;
+    }
+    
+    a {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+    .wrapper {
+        width: 450px;
+        margin: 30px auto 0;
+        background-color: #FFFFFF;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    header {
+        text-align: right;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #5DBA9D;
+    }
+    
+    header a {
+        font-size: 20px;
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 10px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    header a:hover,
+    .list-mode header a.hide-list:hover {
+        background-color: #11956c;
+    }
+    
+    header a.hide-list {
+        background-color: #11956c;
+    }
+    
+    .list-mode header a.hide-list {
+        background-color: #5DBA9D;
+    }
+    
+    .list-mode header a.show-list {
+        background-color: #11956c;
+    }
+    
+    .container:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .container {
+        padding: 10px 0 10px 10px;
+    }
+    
+    .wrapper .box {
+        float: left;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 10px 10px 0;
+        background-color: #CCCCCC;
+        -webkit-transition: all 1.0s ease;
+        -moz-transition: all 1.0s ease;
+        transition: all 1.0s ease;
+        transition: all 1.0s ease;
+    }
+    
+    .wrapper .box a {
+        color: #5DBA9D;
+        text-decoration: none;
+    }
+    
+    .wrapper.list-mode .container {
+        padding-right: 10px;
+    }
+    
+    .wrapper.list-mode .box {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="javascript:void(0)" class="show-list"><i class="fa fa-th-list">line</i></a>
+            <a href="javascript:void(0)" class="hide-list"><i class="fa fa-th">grid</i></a>
+        </header>
+        <div class="container">
+            <div class="box">
+                <a href="http://www.zhangzirui.com/applecom-banner/" target="_blank">apple.com banner</a>
+            </div>
+            <div class="box">
+                <a href="http://www.zhangzirui.com/mywebdesign/rain/rain.html" target="_blank">下雨天</a>
+            </div>
+            <div class="box">
+                <a href="http://www.zhangzirui.com/mywebdesign/HTML5flowers/flowers.html" target="_blank">动态撒花</a>
+            </div>
+            <div class="box">
+                <a href="http://www.zhangzirui.com/mywebdesign/love/love.html" target="_blank">love</a>
+            </div>
+            <div class="box">
+                <a href="http://www.zhangzirui.com/mywebdesign/particles%20in%20space/space.html" target="_blank">Boom！</a>
+            </div>
+            <div class="box">
+                <a href="http://www.zhangzirui.com/mywebdesign/rotatesphere/rotatesphere.html" target="_blank">旋转的球</a>
+            </div>
+            <div class="box">
+                <a href="http://www.zhangzirui.com/mywebdesign/whiteboom/whiteboom.html" target="_blank">white boom</a>
+            </div>
+            <div class="box">
+                <a href="http://www.zhangzirui.com/mywebdesign/Sudoku/sudoku.html" target="_blank">变色九宫格</a>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.js"></script>
+    <script type="text/javascript">
+    $('.show-list').click(function() {
+        $('.wrapper').addClass('list-mode');
+    });
+
+    $('.hide-list').click(function() {
+        $('.wrapper').removeClass('list-mode');
+    });
+    </script>
+</body>
+
+</html>
